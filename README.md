@@ -1,9 +1,13 @@
-# Project Name
+# WebFlake
 
-## Project desc
+## Description
+Christmas themed Webpage using HTML, CSS, JavaScript.  
 
-## participant info
+## Participant info
 
-[Your name](github-profile-urls)
+[Harikrishna R Nair](https://github.com/harikris001)
 
 > to get started click [here](GETTING_STARTED.md)
+
+
+To preview the webpage click here.... (Coming Soon)
