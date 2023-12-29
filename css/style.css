@@ -1,12 +1,11 @@
-/*=============== GOOGLE FONTS ===============*/
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
 
-/*=============== VARIABLES CSS ===============*/
+
 :root {
   --header-height: 3.5rem;
 
-  /*========== Colors ==========*/
-  /*Color mode HSL(hue, saturation, lightness)*/
+
+
   --first-color: hsl(355, 70%, 54%);
   --first-color-alt: hsl(355, 66%, 50%);
   --title-color: hsl(355, 4%, 15%);
@@ -15,8 +14,8 @@
   --body-color: #fff;
   --container-color: #fff;
 
-  /*========== Font and typography ==========*/
-  /*.5rem = 8px | 1rem = 16px ...*/
+
+
   --body-font: 'Poppins', sans-serif;
 
   --biggest-font-size: 1.5rem;
@@ -27,12 +26,12 @@
   --small-font-size: .813rem;
   --smaller-font-size: .75rem;
 
-  /*========== Font weight ==========*/
+
   --font-medium: 500;
   --font-semi-bold: 600;
 
-  /*========== Margenes Bottom ==========*/
-  /*.5rem = 8px | 1rem = 16px ...*/
+
+
   --mb-0-25: .25rem;
   --mb-0-5: .5rem;
   --mb-1: 1rem;
@@ -40,12 +39,12 @@
   --mb-2: 2rem;
   --mb-2-5: 2.5rem;
 
-  /*========== z index ==========*/
+
   --z-tooltip: 10;
   --z-fixed: 100;
 }
 
-/* Responsive typography */
+
 @media screen and (min-width: 968px) {
   :root {
     --biggest-font-size: 2.5rem;
@@ -58,7 +57,7 @@
   }
 }
 
-/*=============== BASE ===============*/
+
 * {
   box-sizing: border-box;
   padding: 0;
@@ -80,10 +79,13 @@ body {
   margin: var(--header-height) 0 0 0;
   background-color: var(--body-color);
   color: var(--text-color);
-  transition: .4s; /*For animation dark mode*/
+  transition: .4s;
 }
 
-h1, h2, h3, h4 {
+h1,
+h2,
+h3,
+h4 {
   color: var(--title-color);
   font-weight: var(--font-semi-bold);
 }
@@ -107,7 +109,7 @@ button {
   outline: none;
 }
 
-/*=============== THEME ===============*/
+
 .nav__btns {
   display: flex;
   align-items: center;
@@ -120,7 +122,7 @@ button {
   cursor: pointer;
 }
 
-/*========== Variables Dark theme ==========*/
+
 body.dark-theme {
   --title-color: hsl(355, 4%, 95%);
   --text-color: hsl(355, 4%, 75%);
@@ -128,10 +130,7 @@ body.dark-theme {
   --container-color: hsl(355, 16%, 16%);
 }
 
-/*========== 
-    Color changes in some parts of 
-    the website, in dark theme 
-==========*/
+
 .dark-theme .scroll-header,
 .dark-theme .nav__menu {
   box-shadow: 0 2px 4px hsla(0, 0%, 4%, .3);
@@ -157,7 +156,7 @@ body.dark-theme {
   background: hsl(355, 8%, 30%);
 }
 
-/*=============== REUSABLE CSS CLASSES ===============*/
+
 .container {
   max-width: 968px;
   margin-left: var(--mb-1-5);
@@ -182,7 +181,7 @@ body.dark-theme {
   text-align: center;
 }
 
-/*=============== HEADER ===============*/
+
 .header {
   width: 100%;
   background-color: var(--body-color);
@@ -190,10 +189,10 @@ body.dark-theme {
   top: 0;
   left: 0;
   z-index: var(--z-fixed);
-  transition: .4s; /*For animation dark mode*/
+  transition: .4s;
 }
 
-/*=============== NAV ===============*/
+
 .nav {
   height: var(--header-height);
   display: flex;
@@ -201,8 +200,8 @@ body.dark-theme {
   align-items: center;
 }
 
-.nav__logo, 
-.nav__close, 
+.nav__logo,
+.nav__close,
 .nav__toggle {
   color: var(--title-color);
 }
@@ -210,6 +209,7 @@ body.dark-theme {
 .nav__logo {
   display: flex;
   align-items: center;
+  -moz-column-gap: 0.25rem;
   column-gap: .25rem;
   font-weight: var(--font-medium);
 }
@@ -271,17 +271,17 @@ body.dark-theme {
   cursor: pointer;
 }
 
-/* Show menu */
+
 .show-menu {
   top: 0;
 }
 
-/* Change background header */
+
 .scroll-header {
   box-shadow: 0 1px 4px hsla(0, 4%, 15%, .1);
 }
 
-/* Active link */
+
 .active-link {
   color: var(--first-color);
 }
@@ -302,8 +302,8 @@ body.dark-theme {
 }
 
 .home__info {
-    font-size: var(--h3-font-size);
-    color: red;
+  font-size: var(--h3-font-size);
+  color: red;
 }
 
 .home__title {
@@ -383,7 +383,7 @@ body.dark-theme {
   justify-self: center;
 }
 
-/*=============== GIFT ===============*/
+
 .gift__container {
   grid-template-columns: repeat(2, 1fr);
   gap: 1.5rem;
@@ -483,7 +483,7 @@ body.dark-theme {
   transform: translateY(-.5rem);
 }
 
-/*Class Swiper*/
+
 .swiper-pagination-bullet {
   background-color: var(--text-color);
 }
@@ -548,6 +548,7 @@ body.dark-theme {
 .footer__logo {
   display: flex;
   align-items: center;
+  -moz-column-gap: 0.25rem;
   column-gap: .25rem;
   color: var(--title-color);
   font-weight: var(--font-medium);
@@ -561,7 +562,7 @@ body.dark-theme {
   font-size: var(--small-font-size);
 }
 
-.footer__logo, 
+.footer__logo,
 .footer__title {
   margin-bottom: var(--mb-1);
 }
@@ -570,7 +571,7 @@ body.dark-theme {
   font-size: var(--h3-font-size);
 }
 
-.footer__links, 
+.footer__links,
 .footer__aviables {
   display: flex;
   flex-direction: column;
@@ -599,7 +600,7 @@ body.dark-theme {
   color: var(--text-color-light);
 }
 
-.footer__img1, 
+.footer__img1,
 .footer__img2 {
   position: absolute;
   width: 100px;
@@ -638,12 +639,12 @@ body.dark-theme {
   color: var(--first-color);
 }
 
-/* Show Scroll Up*/
+
 .show-scroll {
   bottom: 3rem;
 }
 
-/*=============== SCROLL BAR ===============*/
+
 ::-webkit-scrollbar {
   width: .6rem;
   background: hsl(355, 8%, 44%);
@@ -655,8 +656,8 @@ body.dark-theme {
   border-radius: 1rem;
 }
 
-/*=============== BREAKPOINTS ===============*/
-/* For small devices */
+
+
 @media screen and (max-width: 320px) {
   .container {
     margin-left: var(--mb-1);
@@ -673,7 +674,7 @@ body.dark-theme {
   }
 }
 
-/* For medium devices */
+
 @media screen and (min-width: 576px) {
   .home__description {
     padding: 0 8rem;
@@ -709,6 +710,7 @@ body.dark-theme {
   body {
     margin: 0;
   }
+
   .section {
     padding: 6.5rem 0 2rem;
   }
@@ -717,18 +719,22 @@ body.dark-theme {
     height: calc(var(--header-height) + 1.5rem);
     column-gap: 3rem;
   }
-  .nav__toggle, 
-  .nav__close, 
+
+  .nav__toggle,
+  .nav__close,
   .nav__img {
     display: none;
   }
+
   .nav__menu {
     margin-left: auto;
   }
+
   .nav__list {
     flex-direction: row;
     column-gap: 3rem;
   }
+
   .dark-theme .nav__menu {
     box-shadow: none;
   }
@@ -739,12 +745,15 @@ body.dark-theme {
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
   }
+
   .home__container {
     padding-top: 8rem;
   }
+
   .home__data {
     text-align: initial;
   }
+
   .home__description {
     padding: 0;
   }
@@ -754,10 +763,11 @@ body.dark-theme {
     column-gap: 5rem;
   }
 
-  .celebrate__data, 
+  .celebrate__data,
   .celebrate__title {
     text-align: initial;
   }
+
   .celebrate__description {
     padding: 0;
   }
@@ -772,7 +782,7 @@ body.dark-theme {
   }
 }
 
-/* For large devices */
+
 @media screen and (min-width: 992px) {
   .container {
     margin-left: auto;
@@ -782,9 +792,11 @@ body.dark-theme {
   .home__container {
     column-gap: 1rem;
   }
+
   .home__img {
     width: 500px;
   }
+
   .home__description {
     padding-right: 8rem;
   }
@@ -793,6 +805,7 @@ body.dark-theme {
     column-gap: 8rem;
     padding-top: 2rem;
   }
+
   .giving__img {
     width: 120px;
   }
@@ -800,6 +813,7 @@ body.dark-theme {
   .celebrate__img {
     width: 450px;
   }
+
   .celebrate__description {
     padding-right: 7rem;
   }
@@ -807,13 +821,16 @@ body.dark-theme {
   .gift__container {
     padding-top: 2rem;
   }
+
   .gift__card {
     padding: 2rem 1.5rem 1.5rem;
   }
+
   .gift__img {
     width: 120px;
     margin-bottom: var(--mb-1);
   }
+
   .gift__title {
     font-size: var(--small-font-size);
   }
@@ -821,9 +838,11 @@ body.dark-theme {
   .new__container {
     padding-top: 2rem;
   }
+
   .new__card {
     margin-bottom: 5rem;
   }
+
   .new__price {
     font-size: var(--h3-font-size);
   }
@@ -838,16 +857,20 @@ body.dark-theme {
   .message__form {
     text-align: initial;
   }
+
   .message__title {
     font-size: var(--h1-font-size);
   }
+
   .message__input {
     display: block;
     width: 280px;
   }
+
   .message__button {
     width: initial;
   }
+
   .message__img {
     width: 320px;
   }
@@ -856,22 +879,26 @@ body.dark-theme {
     grid-template-columns: repeat(4, max-content);
     justify-content: space-between;
   }
+
   .footer__copy {
     margin-top: 7rem;
   }
-  .footer__img1, 
+
+  .footer__img1,
   .footer__img2 {
     width: 120px;
   }
+
   .footer__img1 {
     top: 100%;
     left: 0;
   }
+
   .footer__img2 {
     top: 40%;
     right: -7rem;
   }
-  
+
   .scrollup {
     right: 3rem;
   }
