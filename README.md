@@ -7,7 +7,7 @@ Christmas themed Webpage using HTML, CSS, JavaScript.
 
 [Harikrishna R Nair](https://github.com/harikris001)
 
-> to get started click [here](GETTING_STARTED.md)
+> To get started click [here](GETTING_STARTED.md)
 
 
-To preview the webpage click here.... (Coming Soon)
+To preview the webpage click here [WebFlake](https://harikris001.github.io/Tinkerhub-WebFlake/)
